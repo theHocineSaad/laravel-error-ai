@@ -1,0 +1,34 @@
+{
+    "name": "thehocinesaad/laravel-error-ai",
+    "description": "This package adds Ask AI button to the error page.",
+    "keywords": [
+        "laravel",
+        "php",
+        "exception",
+        "thehocinesaad",
+        "laravel-error-ai",
+        "error",
+        "ai"
+    ],
+    "homepage": "https://github.com/thehocinesaad/laravel-error-ai",
+    "version": "1.0.0",
+    "license": "MIT",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Hocine Saad",
+            "email": "theHocineSaad@gmail.com",
+            "role": "Creator - Maintainer"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "TheHocineSaad\\LaravelErrorAi\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "TheHocineSaad\\LaravelErrorAi\\Tests\\": "tests"
+        }
+    }
+}
