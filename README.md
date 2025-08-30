@@ -4,6 +4,10 @@
 
 Add “Ask AI” buttons to Laravel’s error page to quickly get help from ChatGPT or Claude. No API keys. No backend calls. Just smart links and beautiful UI.
 
+## Requirements
+
+- Laravel v12.25.0 or higher.
+
 ## Installation
 
 Install the package (typically as a dev dependency):
