@@ -7,6 +7,7 @@ Add “Ask AI” buttons to Laravel’s error page to quickly get help from Chat
 ## Requirements
 
 - Laravel v12.25.0 or higher.
+- If your project was originally created on Laravel versions earlier than 11.9, make sure to remove `spatie/laravel-ignition` otherwise it will override Laravel’s built-in error page and the “Copy as Markdown” and “Ask AI” buttons won’t appear.
 
 ## Installation
 
