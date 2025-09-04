@@ -31,9 +31,15 @@
             "TheHocineSaad\\LaravelErrorAi\\Tests\\": "tests"
         }
     },
+    "require": {
+        "laravel/framework": ">=12.25.0"
+    },
     "require-dev": {
         "orchestra/testbench": "^10.6",
         "laravel/pint": "^1.24"
+    },
+    "conflict": {
+        "spatie/laravel-ignition": "*"
     },
     "extra": {
       "laravel": {
