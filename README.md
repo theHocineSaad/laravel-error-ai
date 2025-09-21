@@ -26,7 +26,7 @@ Add “Ask AI” buttons to Laravel’s error page to quickly get help from Chat
 2. If `spatie/laravel-ignition` is installed on your project, uninstall it (otherwise it will override Laravel's built-in error page):
    ```bash
    composer remove spatie/laravel-ignition
-```
+   ```
 
 ## Usage
 
