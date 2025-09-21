@@ -2,23 +2,23 @@
     menu: false
 }" @click.outside="menu = false">
     <button x-cloak
-        class="relative border-l border-gray-200/80 dark:border-gray-950/95 rounded-r-full bg-white p-2 dark:bg-gray-800 sm:col-span-1 dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 cursor-pointer transition-colors duration-200 ease-in-out"
+        class="relative rounded-r-md sm:col-span-1 border-y border-r px-3 h-8 transition-colors duration-200 ease-in-out cursor-pointer shadow-xs text-neutral-600 dark:text-neutral-400 bg-white/5 border-neutral-200 hover:bg-neutral-100 dark:bg-white/5 dark:border-white/10 dark:hover:bg-white/10"
         @click="menu = ! menu">
-        <x-laravel-exceptions-renderer::icons.chevron-down class="h-5 w-5" />
+        <x-laravel-exceptions-renderer::icons.chevron-down class="h-4 w-4" />
     </button>
 
     <div x-show="menu"
-        class="absolute mt-1 right-0 z-10 flex origin-top-right flex-col rounded-md bg-white shadow-xl ring-1 ring-gray-900/5 dark:bg-gray-800"
+        class="absolute mt-1 right-0 z-10 flex origin-top-right flex-col rounded-md cursor-pointer shadow-xs text-neutral-600 dark:text-neutral-400 bg-neutral-50 dark:bg-neutral-900 border-neutral-200 dark:border-white/10"
         style="display: none" @click="menu = false">
-        <a href="https://chatgpt.com/?hints=search&q={{ $uriEncodedExceptionMarkdown }}" target="_blank"
+        <a href="https://chatgpt.com/?hints=search&q={{ urlencode($markdown) }}" target="_blank"
             rel="noopener noreferrer"
-            class="flex items-center gap-3 px-4 py-2 whitespace-nowrap hover:rounded-t-md hover:bg-gray-100 dark:hover:bg-gray-700 text-gray-900 dark:text-gray-100">
-            <x-laravel-exceptions-renderer::icons.chatgpt-logo class="h-5 w-5" />
+            class="text-sm flex items-center gap-2 px-3 h-8 whitespace-nowrap rounded-t-md transition-colors duration-200 ease-in-out cursor-pointer shadow-xs text-neutral-600 dark:text-neutral-400 bg-white/5 border-neutral-200 hover:bg-neutral-100 dark:bg-white/5 dark:border-white/10 dark:hover:bg-white/10">
+            <x-laravel-exceptions-renderer::icons.chatgpt-logo class="h-3 w-3" />
             Ask ChatGPT
         </a>
-        <a href="https://claude.ai/new?q={{ $uriEncodedExceptionMarkdown }}" target="_blank" rel="noopener noreferrer"
-            class="flex items-center gap-3 px-4 py-2 whitespace-nowrap hover:rounded-b-md hover:bg-gray-100 dark:hover:bg-gray-700 text-gray-900 dark:text-gray-100">
-            <x-laravel-exceptions-renderer::icons.claude-logo class="h-5 w-5" />
+        <a href="https://claude.ai/new?q={{ urlencode($markdown) }}" target="_blank" rel="noopener noreferrer"
+            class="text-sm flex items-center gap-2 px-3 h-8 whitespace-nowrap rounded-b-md transition-colors duration-200 ease-in-out cursor-pointer shadow-xs text-neutral-600 dark:text-neutral-400 bg-white/5 border-neutral-200 hover:bg-neutral-100 dark:bg-white/5 dark:border-white/10 dark:hover:bg-white/10">
+            <x-laravel-exceptions-renderer::icons.claude-logo class="h-3 w-3" />
             Ask Claude
         </a>
     </div>
