@@ -12,13 +12,20 @@ Add “Ask AI” buttons to Laravel’s error page to quickly get help from Chat
 ## Installation
 
 1. Install the package (typically as a dev dependency):
-```bash
-composer require --dev thehocinesaad/laravel-error-ai
-```
+
+   - If your project's Laravel version is between `12.25.0` and `12.28.1`, install version `^1.0`:
+     ```bash
+     composer require --dev thehocinesaad/laravel-error-ai:^1.0
+     ```
+
+   - If your project's Laravel version is `12.29.0` or higher, install the latest version:
+     ```bash
+     composer require --dev thehocinesaad/laravel-error-ai
+     ```
 
 2. If `spatie/laravel-ignition` is installed on your project, uninstall it (otherwise it will override Laravel's built-in error page):
-```bash
-composer remove spatie/laravel-ignition
+   ```bash
+   composer remove spatie/laravel-ignition
 ```
 
 ## Usage
